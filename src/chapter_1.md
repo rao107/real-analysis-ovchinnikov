@@ -142,11 +142,14 @@ By **M3**, \\(1 \cdot 1 = 1\\). This equation also satisfies **M4**, showing tha
 
 ### Exercise 1.7
 
-TODO
+Reflexivity:
+\\((f, g) \sim (f, g)\\) since \\(fg = fg\\).
 
-TODO
+Symmetry:
+If \\(fk = hg\\), then \\(hg = fk\\). Therefore, \\((f, g) \sim (h, k)\\) implies \\((h, k) \sim (f, g)\\).
 
-TODO
+Transitivity:
+Suppose \\((f, g) \sim (h, k)\\) and \\((h, k) \sim (m, n)\\). That is, \\(fk = hg\\) and \\(hn = mk\\). Therfore, \\((fk)(hn) = (hg)(mk)\\) which simplifies to \\(fn = gm\\). Therefore, \\((f, g) \sim (m, n)\\).
 
 ### Exercise 1.8
 
@@ -268,7 +271,16 @@ TODO
 
 ### Exercise 1.21
 
+**(a)**
+\\(\lim(1/n) = 0\\)
 
+To prove this, we must show that \\(| 1/n - 0 | < \varepsilon\\) for all \\(n > N\\). If we let \\(N = 1/\varepsilon\\), 
+
+**(b)**
+\\(\lim(1/n^3) = 0\\)
+
+**(c)**
+\\(\lim\frac{2 + n - n^2}{4 + 5n + 3n^2} = -\frac{1}{3}\\)
 
 ### Exercise 1.22
 
