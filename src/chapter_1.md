@@ -362,7 +362,7 @@ To prove this, we must show that \\(| 1/n - 0 | < \varepsilon\\) for all \\(n > 
 
 ### Exercise 1.23
 
-
+Let \\(b_n\\) be a constant sequence that equals \\(k\\) for all \\(n\\). This implies \\(k a_n = b_n a_n\\). Using Theorem 1.20, \\(\lim (k a_n) = \lim (b_n a_n) = (\lim b_n)(\lim a_n) = k \lim (a_n)\\).
 
 ### Exercise 1.24
 
