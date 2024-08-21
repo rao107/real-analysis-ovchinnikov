@@ -317,13 +317,9 @@ If \\(a \geq 0\\), then \\(|a|^2 = a^2\\). If \\(a < 0\\), then \\(|a|^2 = |-a|^
 **(h)**
 \\(|a - b| \geq ||a| - |b||\\)
 
-If \\(a - b \geq 0\\), then \\(a \geq b\\).
+If \\(a - b \geq 0\\), then \\(a \geq b\\) and we only need to prove \\(a - b \geq ||a| - |b||\\). If \\(b \geq 0\\), then \\(a \geq 0\\) and so we only need to show \\(a - b \geq |a - b| = a - b\\) which is trivially true. If \\(b < 0\\), then we need to show \\(a - b \geq ||a| + b|\\). In this scenario, if \\(a \geq 0\\) or \\(a < 0\\), then this simplifies to \\(a - b \geq a + b\\) or \\(a - b \geq |-(a - b)| = a - b\\). The latter is trivially true and the former is true since \\(b < 0\\).
 
-TODO
-
-TODO
-
-TODO
+If \\(a - b > 0\\), then \\(a < b\\) and we need to show that \\(b - a \geq ||a| - |b||\\). If \\(a \geq 0\\), then \\(b \geq 0\\) as well and so \\(b - a \geq |a - b| = |-(b - a)| = b - a\\). If \\(a < 0\\), then we need to show \\(b - a \geq |-a -|b||\\). In this scenario, if \\(b < 0\\), then \\(b - a \geq |-a + b| = b - a\\) which is trivially true. Moreover, if \\(b \geq 0\\), then \\(b - a \geq |-a - b| = a + b\\) which is true since \\(a < 0\\).
 
 **(i)**
 \\(|a + b| = |a| + |b|\\) iff \\(ab \geq 0\\)
