@@ -149,17 +149,55 @@ Symmetry:
 If \\(fk = hg\\), then \\(hg = fk\\). Therefore, \\((f, g) \sim (h, k)\\) implies \\((h, k) \sim (f, g)\\).
 
 Transitivity:
-Suppose \\((f, g) \sim (h, k)\\) and \\((h, k) \sim (m, n)\\). That is, \\(fk = hg\\) and \\(hn = mk\\). Therfore, \\((fk)(hn) = (hg)(mk)\\) which simplifies to \\(fn = gm\\). Therefore, \\((f, g) \sim (m, n)\\).
+Suppose \\((f, g) \sim (h, k)\\) and \\((h, k) \sim (m, n)\\). That is, \\(fk = hg\\) and \\(hn = mk\\). Therefore, \\((fk)(hn) = (hg)(mk)\\) which simplifies to \\(fn = gm\\). Therefore, \\((f, g) \sim (m, n)\\).
 
 ### Exercise 1.8
 
-TODO
+Proving **A1**:
+\\[ f/g + h/k = (fk + gh)/gk = (hg + kf)/kg = h/k + f/g \\]
 
-TODO
+Proving **A2**:
+\\[
+  \begin{align}
+    (f/g + h/k) + m/n &= (fk + gh)/gk + m/n \\\\
+    &= (fkn + ghn + gkm)/gkn \\\\
+    &= f/g + (hn + mk)/kn \\\\
+    &= f/g + (h/k + m/n) \\\\
+  \end{align}
+\\]
 
-TODO
+Proving **A3**:
+The \\(0\\) rational polynomial is the additive identity since the \\(0\\) polynomial is the additive identity for integer polynomials.
+
+Proving **A4**:
+The additive identity of a rational polynomial \\(f/g\\) is \\(-f/g\\) since adding these two gives us \\(f/g + (-f/g) = (fg + -gf)/gg = 0/gg = 0\\).
+
+Proving **M1**:
+\\[ f/g \cdot h/k = fh/gk = hf/kg = h/k \cdot f/g \\]
+
+Proving **M2**:
+\\[ (f/g \cdot h/k) \cdot m/n = fh/gk \cdot m/n = fhm/gkn = f/g \cdot hm/kn = f/g \cdot (h/k \cdot m/n) \\]
+
+Proving **M3**:
+The multiplicative identity is the \\(1\\) polynomial since \\(f/g \cdot 1/1 = f/g\\).
+
+Proving **M4**:
+The multiplicative inverse of a rational polynomial \\(f/g\\) is \\(g/f\\) since multiplying these two gives us \\(fg/gf = 1\\).
+
+Proving **D**:
+\\[
+  \begin{align}
+    f/g \cdot (h/k + m/n) &= f/g \cdot (hn + mk)/kn \\\\
+    &= (fhn + fmk)/gkn \\\\
+    &= fhn/gkn + fmk/gkn \\\\
+    &= fh/gk + fm/gn \\\\
+    &= f/g \cdot h/k + f/g \cdot m/n \\\\
+  \end{align}
+\\]
 
 ### Exercise 1.9
+
+In an ordered field, \\(0 \neq 1\\). If \\(1 < 0\\), then ... [find contradiction]. Therefore, from the trichotomy property, \\(0 < 1\\).
 
 TODO
 
@@ -197,7 +235,21 @@ Now, we assume that \\(a_1 < a_n\\) and must show that \\(a_1 < a_{n+1}\\). We a
 
 ### Exercise 1.14
 
+From Example 1.3, we define \\(f/g < h/k\\) if \\(fk < gh\\).
 
+**(a)**
+\\(f/g < h/k\\) iff \\(f/g + m/n < h/k + m/n\\)
+
+If \\(f/g < h/k\\), then we know \\(fk < gh\\) and must prove \\((fn + mg)/gn < (hn + mk)/kn\\) or equivalently \\((fn + mg)kn < (hn + mk)gn\\). We can remove the \\(n\\) on both sides and distribute to get \\(fnk + mgk < hng + mkg\\). This can be further simplified into \\(fk < hg\\) which is what we know from \\(f/g < h/k\\).
+
+If \\(f/g + m/n < h/k + m/n\\), then we know \\((fn + mg)/gn < (hn + mk)/kn\\), and must prove \\(f/g < h/k\\) or equivalently \\(fk < gh\\). We can multiply \\(n\\) and add \\(mgk\\) on both sides to get \\(fkn + mgk < ghn + mgk\\). This can be rewritten as \\((fn + mg)k < (hn + mk)g\\). Multiply \\(n\\) on both sides to get \\((fn + mg)kn < (hn + mk)gn\\). This is what we know from \\((fn + mg)/gn < (hn + mk)/kn\\).
+
+**(b)**
+\\(f/g < h/k\\) iff \\(f/g \cdot m/n < h/k \cdot m/n\\) where \\(m/n > 0\\)
+
+If \\(f/g < h/k\\), then we know \\(fk < gh\\) and must prove \\(fm/gn < hm/kn\\) or equivalently \\(fmkn < hmgn\\). We can remove \\(mn\\) from both sides of the inequality to get \\(fk < hg\\), which is true from \\(f/g < h/k\\).
+
+If \\(f/g \cdot m/n < h/k \cdot m/n\\), then we know \\(fmkn < hmgn\\) and must prove \\(f/g < h/k\\) or equivalently \\(fk < gh\\). We can multiply each side of the inequality by \\(mn\\) to get \\(fkmn < ghmn\\), which is true from \\(f/g \cdot m/n < h/k \cdot m/n\\).
 
 ### Exercise 1.15
 
@@ -220,40 +272,66 @@ TODO
 ### Exercise 1.17
 
 **(a)**
+\\(|a| \geq 0\\)
 
-
+If \\(a \geq 0\\), then \\(|a| \geq 0\\) by the definition of absolute value. If \\(a < 0\\), then \\(0 < -a\\). We can do \\(|a| = |a - 0| = |0 - a| = |-a| = -a > 0\\) by symmetry to show that \\(|a| > 0\\).
 
 **(b)**
+\\(|a| = 0\\) iff \\(a = 0\\)
 
-
+If \\(a = 0\\), then \\(|a| = 0\\). If \\(|a| = 0\\), then we show through the trichotomy property that \\(a = 0\\). If \\(a > 0\\), then \\(|a| > 0\\). If \\(a < 0\\), then \\(0 < -a\\) so \\(|a| = |-a| > 0\\). Therefore, \\(a = 0\\).
 
 **(c)**
+\\(|-a| = |a|\\)
 
-
+\\[|a| = |a - 0| = |0 - a| = |-a|\\]
 
 **(d)**
+\\(|a \cdot b| = |a| \cdot |b|\\)
 
+If \\(a \geq 0\\) and \\(b \geq 0\\), \\(|a \cdot b| = a \cdot b = |a| \cdot |b|\\).
 
+If \\(a < 0\\) and \\(b < 0\\), \\(|a \cdot b| = |-a \cdot -b| = -a \cdot -b = a \cdot b = |a| \cdot |b|\\).
+
+If \\(a \geq 0\\) and \\(b < 0\\), \\(|a \cdot b| = |a \cdot -b \cdot -1| = |-(a \cdot -b)| = |a \cdot -b| = a \cdot -b = |a| \cdot |-b| = |a| \cdot |b|\\). The same can be done for \\(a < 0\\) and \\(b \geq 0\\).
 
 **(e)**
+\\(-|a| \leq a \leq |a|\\)
 
+If \\(a \geq 0\\), then \\(|a| = a\\). Therefore, \\(a \leq |a|\\) and \\(-|a| = -a \leq a\\) since \\(0 \leq a + a\\).
 
+If \\(a < 0\\), then \\(|a| = |-a| = -a\\). Therefore, \\(-|a| \leq a\\) and \\(a \leq -a = |a|\\) since \\(a + a \leq 0\\).
 
 **(f)**
+\\(|a| \leq b\\) iff \\(-b \leq a \leq b\\)
 
+If \\(a \geq 0\\), then \\(|a| = a\\). Therefore, if \\(|a| \leq b\\), then it's trivial to see \\(a \leq b\\). Moreover, \\(0 \leq b - a\\) which means \\(a - b \leq 0\\) and so \\(-b \leq -a\\). Since \\(a \geq 0\\), \\(-b \leq -a \leq a \leq b\\). If \\(-b \leq a \leq b\\), then \\(-b \leq |a| \leq b\\) and so \\(|a| \leq b\\).
 
+If \\(a < 0\\), then \\(|a| = -a\\). Therefore, if \\(|a| \leq b\\), then \\(-b \leq a\\). Moreover, \\(0 \leq a + b\\) which means \\(-a - b \leq 0\\) and so \\(-a \leq b\\). Since \\(a < 0\\), \\(-b \leq a \leq -a \leq b\\). If \\(-b \leq a \leq b\\), then \\(-b \leq a\\) so \\(-a \leq b\\) which means \\(|a| \leq b\\).
 
 **(g)**
+\\(|a|^2 = a^2\\)
 
-
+If \\(a \geq 0\\), then \\(|a|^2 = a^2\\). If \\(a < 0\\), then \\(|a|^2 = |-a|^2 = (-a)^2 = -1 \cdot -1 \cdot a \cdot a = a^2\\)
 
 **(h)**
+\\(|a - b| \geq ||a| - |b||\\)
 
+If \\(a - b \geq 0\\), then \\(a \geq b\\).
 
+TODO
+
+TODO
+
+TODO
 
 **(i)**
+\\(|a + b| = |a| + |b|\\) iff \\(ab \geq 0\\)
+
+Assume \\(|a + b| = |a| + |b|\\). If \\(a + b \geq 0\\), then \\(a + b = |a| + |b|\\) which means \\(|a| = a\\) and \\(|b| = b\\) so \\(ab \geq 0\\). If \\(a + b < 0\\), then \\(-(a + b) = -a + -b = |a| + |b|\\) which means \\(|a| = -a\\) and \\(|b| = -b\\) so \\(ab = -a \cdot -b \geq 0\\).
 
 
+If \\(ab \geq 0\\), then either \\(a \geq 0\\) and \\(b \geq 0\\) or \\(a \leq 0\\) and \\(b \leq 0\\). If \\(a \geq 0\\) and \\(b \geq 0\\), then \\(|a + b| = a + b = |a| + |b|\\). If \\(a \leq 0\\) and \\(b \leq 0\\), then \\(|a + b| = |-(a + b)| = -(a + b) = -a + -b = |a| + |b|\\).
 
 ### Exercise 1.18
 
@@ -296,7 +374,7 @@ To prove this, we must show that \\(| 1/n - 0 | < \varepsilon\\) for all \\(n > 
 
 ### Exercise 1.25
 
-
+We can prove there is a minimum and a maximum via induction over the size of the finite set of elements of the ordered field, denoted \\(n\\). For the base case where \\(n = 1\\), the only element in the set is the minimum and maximum. Now, we assume that there is a minimum and maximum in a finite set of size \\(n\\) and must prove they exist for a finite set of size \\(n + 1\\). We can take \\(n\\) elements of the set with \\(n + 1\\) and see that it has a minimum and maximum value. Then with the leftover element, we can compare it against the minimum and maximum. If it is less than the minimum, then the element is the minimum of the set. Otherwise the minimum stays the same. If it is more than the maximum, then the element is the maximum of the set. Otherwise the maximum stays the same. Therefore, there is a minimum and maximum of a finite set of elements of an ordered field.
 
 ### Exercise 1.26
 
