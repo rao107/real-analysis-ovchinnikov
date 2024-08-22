@@ -331,7 +331,9 @@ If \\(ab \geq 0\\), then either \\(a \geq 0\\) and \\(b \geq 0\\) or \\(a \leq 0
 
 ### Exercise 1.18
 
+If \\(a \leq b \leq c\\), then \\(a - b \geq 0\\) and \\(b - c \geq 0\\). Therefore, from Exercise 1.17(i), \\(|(a - b) + (b - c)| = |a - b| + |b - c|\\). Simplifying this gives us \\(|a - b| + |b - c| = |a - c|\\).
 
+If \\(|a - b| + |b - c| = |a - c|\\), then by Exercise 1.17(i), \\((a - b)(b - c) \geq 0\\). This means \\((a - b)\\) and \\((b - c)\\) must both be positive or negative. However, if they are both positive, then \\(a - b \geq 0 \implies a \geq b\\) and \\(b - c \geq 0 \implies b \geq c\\) so \\(a \geq c\\) violating our assumption that \\(a \leq c\\). When they are both negative, the same reasoning shows that \\(a \leq b \leq c\\).
 
 ### Exercise 1.19
 
@@ -366,7 +368,7 @@ TODO
 
 ### Exercise 1.22
 
-
+We want to show that \\((|a_n|)\\) is a Cauchy sequence given that \\((a_n)\\) is a Cauchy sequence. From the definition of a Cauchy sequence, we know that for every \\(\varepsilon > 0\\), there is \\(N\\) such that \\(|a_m - a_n| < \varepsilon\\) for all \\(m, n > N\\). From Exercise 1.17(h), we know that \\(||a_n| - |a_m|| \leq |a_n - a_m|\\) for \\(m > n\\). Therefore, for every \\(\varepsilon > 0\\), there is \\(N\\) such that \\(||a_n| - |a_m|| < \varepsilon\\) for all \\(m, n > N\\) so \\((|a_n|)\\) is a Cauchy sequence.
 
 ### Exercise 1.23
 
