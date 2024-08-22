@@ -348,13 +348,21 @@ If \\(ab \geq 0\\), then either \\(a \geq 0\\) and \\(b \geq 0\\) or \\(a \leq 0
 **(a)**
 \\(\lim(1/n) = 0\\)
 
-To prove this, we must show that \\(| 1/n - 0 | < \varepsilon\\) for all \\(n > N\\). If we let \\(N = 1/\varepsilon\\), 
+To prove this, we must show that \\(| 1/n - 0 | < \varepsilon\\) for all \\(n > N\\) or \\(1/n < \varepsilon\\) since \\(n > 0\\). First, we can see that \\(1/n\\) is strictly decreasing since \\(1/n > 1/(n+1)\\). This is true since \\(n+1 > n\\) is obviously true. Therefore, if \\(N = 1/\varepsilon\\), then for all \\(n > N\\), \\(1/n < \varepsilon\\) since if \\(n = 1/\varepsilon\\) then \\(1/n = \varepsilon\\) and \\(1/n\\) is strictly decreasing.
 
 **(b)**
 \\(\lim(1/n^3) = 0\\)
 
+We can use the Squeeze Theorem to show this limit is true. We know that \\(1/n^3 < 1/n\\) for \\(n > 0\\) since \\(n < n^3\\). We also know that \\(0/1 < 1/n^3\\) for \\(n > 0\\) since \\(0 < 1\\). Since \\(0 < 1/n^3 < 1/n\\) and \\(\lim(0) = 0\\) and \\(\lim(1/n) = 0\\), by the Squeeze Theorem, \\(\lim(1/n^3) = 0\\).
+
 **(c)**
 \\(\lim\frac{2 + n - n^2}{4 + 5n + 3n^2} = -\frac{1}{3}\\)
+
+TODO
+
+TODO
+
+TODO
 
 ### Exercise 1.22
 
