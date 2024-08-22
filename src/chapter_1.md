@@ -221,7 +221,7 @@ TODO
 
 ### Exercise 1.11
 
-
+\\[ a/b < c/d \iff abd/b < bcd/d \iff ad < bc \\]
 
 ### Exercise 1.12
 
