@@ -337,9 +337,7 @@ If \\(|a - b| + |b - c| = |a - c|\\), then by Exercise 1.17(i), \\((a - b)(b - c
 
 ### Exercise 1.19
 
-\\(a \leq x \leq b\\), \\(a \leq y \leq b\\)
-
-\\(|x - y| \leq b - a\\)
+From Exercise 1.17(e), to show that \\(|x - y| \leq b - a\\) we can show that \\(-(b - a) \leq x - y \leq b - a\\). We also know that since \\(a \leq x \leq b\\), \\(0 \leq x - a \leq b - a\\) and \\(-(b - a) \leq x - b \leq 0\\). Since \\(a \leq y \leq b\\), this means that \\(-(b - a) \leq x - y \leq b - a\\).
 
 ### Exercise 1.20
 
@@ -384,7 +382,7 @@ We can prove there is a minimum and a maximum via induction over the size of the
 
 ### Exercise 1.26
 
-
+Let \\(\varepsilon > 0\\). There is \\(N \in \mathbb{N}\\) such that \\(|a_n - a| < \varepsilon\\) for all \\(n > N\\) where \\(a_n \to a\\). Since \\(m, m + 1, \cdots\\) is a strictly increasing sequence of natural numbers, there is \\(N' \in \mathbb{N}\\) such that \\(m + n > N\\) for all \\(n > N'\\). It follows that \\(|a_{m + n} - a| < \varepsilon\\) for all \\(n > N'\\). Therefore, \\(a_{m + n} \to a\\).
 
 ### Exercise 1.27
 
