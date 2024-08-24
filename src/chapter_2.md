@@ -68,7 +68,9 @@ Suppose, for the sake of contradiction, that \\(\sup E' > \sup E\\). Since it is
 
 ### Exercise 2.11
 
+Suppose \\(b\\) is the supremum. Since \\(b\\) is the least upper bound and \\(b - 1/n < b\\), \\(b - 1/n\\) cannot be an upper bound or it would contradict the definition of supremum. Moreover, since \\(b + 1/n > b\\) and \\(b\\) is an upper bound, \\(b + 1/n\\) must also be an upper bound as well.
 
+Suppose for every natural number \\(n\\) that \\(b - 1/n\\) is not an upper bound and \\(b + 1/n\\) is an upper bound. Since \\(\lim(b + 1/n) = b\\), this means \\(b\\) is also an upper bound. Moreover, if there existed a lower upper bound \\(b'\\) such that \\(b' = b - \varepsilon\\) where \\(\varepsilon > 0\\), then for \\(n > 1/\varepsilon\\) we can see that \\(b - \varepsilon\\) is not an upper bound so \\(b'\\) cannot be a supremum. Therefore, \\(b\\) is the supremum.
 
 ### Exercise 2.12
 
@@ -82,7 +84,7 @@ For the sake of contradiction, suppose \\(\sqrt{2} + \sqrt{3}\\) is a rational n
 
 Reflexivity: Since \\(\lim(a_n - a_n) = \lim(0) = 0\\), the relation is reflexive.
 
-Symmetry: If \\((a_n) \sim (b_n)\\), then \\(\lim(a_n - b_n) = 0\\). This means \\(\lim(a_n) = \lim(b_n)\\) so \\(\lim(b_n - a_n) = 0\\). Therefore, \\((b_n) \sim (a_n)\\) and the relation is symmetric.
+Symmetry: If \\((a_n) \sim (b_n)\\), then \\(\lim(a_n - b_n) = 0\\). This means \\(\lim(a_n) - \lim(b_n) = 0\\) so \\(\lim(a_n) = \lim(b_n)\\) so \\(0 = \lim(b_n) - \lim(a_n)\\) so \\(0 = \lim(b_n - a_n)\\). Therefore, \\((b_n) \sim (a_n)\\) and the relation is symmetric.
 
 Transitivity: If \\((a_n) \sim (b_n)\\) and \\((b_n) \sim (c_n)\\), then \\(\lim(a_n - b_n) = 0\\) and \\(\lim(b_n - c_n) = 0\\). This means \\(\lim(a_n) = \lim(b_n)\\) and \\(\lim(b_n) = \lim(c_n)\\). Therefore, \\(\lim(a_n) = \lim(c_n)\\) so \\(\lim(c_n - a_n) = 0\\) and \\((a_n) \sim (c_n)\\).
 
