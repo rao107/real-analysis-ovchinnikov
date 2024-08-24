@@ -8,7 +8,7 @@ The same argument can be made for infimums as well with the infimums \\(a\\) and
 
 ### Exercise 2.2
 
-
+Every bounded above subset of a field has an associated subset that is bounded below taking every element in the original subset to its additive inverse. We know it is bounded below since \\(x \leq b\\) implies \\(-b \leq -x\\) for all elements in the original subset \\(x\\) and the original supremum \\(b\\). Moreover, \\(-b\\) is the infimum of the new subset since \\(b \leq b'\\) for any upper bound \\(b'\\) implies \\(-b' \leq -b\\) for any lower bound \\(-b'\\). Therefore, the two definitions are equivalent.
 
 ### Exercise 2.3
 
@@ -24,7 +24,7 @@ Let \\(m = n + i\\) and we will show via induction that \\(a_n \leq a_m\\) and \
 
 ### Exercise 2.6
 
-For the sake of contradiction, assume the opposite: that \\(\sup A > \inf B\\).
+For the sake of contradiction, assume the opposite: that \\(\sup A > \inf B\\). This means that there exists \\(\varepsilon > 0\\) such that \\(\sup A - \inf B = \varepsilon\\). From Theorem 2.1, there exists an element \\(x \in A\\) where \\(x > \sup A - \varepsilon\\). Substituting \\(\varepsilon\\) for \\(\sup A - \inf B\\) reveals the contradiction, \\(x > \inf B\\). From our assumptions, \\(a \leq b\\) for all \\(a \in A\\) and \\(b \in B\\) so \\(x > \inf B\\) violates our premise proving that \\(\sup A \leq \inf B\\).
 
 ### Exercise 2.7
 
@@ -78,7 +78,15 @@ For the sake of contradiction, suppose \\(\sqrt{2} + \sqrt{3}\\) is a rational n
 
 ### Exercise 2.13
 
+Let \\(a = p/q\\).
 
+For the sake of contradiction, suppose \\(a + b = r/s\\). Substituting \\(a = p/q\\), we get \\(b = (qr - ps)/qs\\) which is a contradiction as \\(b\\) is irrational.
+
+For the sake of contradiction, suppose \\(a - b = r/s\\). Substituting \\(a = p/q\\), we get \\(b = (qr + ps)/qs\\) which is a contradiction as \\(b\\) is irrational.
+
+For the sake of contradiction, suppose \\(a/b = r/s\\). Substituting \\(a = p/q\\), we get \\(b = ps/qr\\) which is a contradiction as \\(b\\) is irrational.
+
+For the sake of contradiction, suppose \\(b/a = r/s\\). Substituting \\(a = p/q\\), we get \\(b = pr/qs\\) which is a contradiction as \\(b\\) is irrational.
 
 ### Exercise 2.14
 
