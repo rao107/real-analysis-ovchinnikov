@@ -102,7 +102,7 @@ Transitivity: If \\((a_n) \sim (b_n)\\) and \\((b_n) \sim (c_n)\\), then \\(\lim
 
 ### Exercise 2.16
 
-
+Since \\(E\\) is a dense subset, this means for any \\(a \in \mathbb{F}\\) and \\(\varepsilon > 0 \in \mathbb{F}\\), there is an element \\(x \in E\\) such that \\(|x - a| < \varepsilon\\). Equivalently, \\(a - \varepsilon < x < a + \varepsilon\\). We are given \\(x < y\\) so \\(y = x + \varepsilon\\) for some \\(\varepsilon > 0\\). From the definition of a dense subset, there is \\(r \in E\\) such that \\(x - \varepsilon < r < x + \varepsilon\\). Therefore, \\(x < r < y\\).
 
 ### Exercise 2.17
 
@@ -110,7 +110,19 @@ Transitivity: If \\((a_n) \sim (b_n)\\) and \\((b_n) \sim (c_n)\\), then \\(\lim
 
 ### Exercise 2.18
 
+**(a)** \\(\phi\\) is a one-to-one mapping
 
+To show \\(\phi\\) is a one-to-one mapping, we must show that \\(\phi(x) = \phi(y) \implies x = y\\). The left hand side of the implication shows that \\(\phi(x) - \phi(y) = 0\\) which consequently show \\(\phi(x - y) = 0\\). Since \\(\phi(0) = 0\\) (this is proven in the next section), this means \\(\phi(x - y) = \phi(0)\\) and so \\(x - y = 0\\) meaning \\(x = y\\).
+
+**(b)** \\(\phi(0) = 0\\) and \\(\phi(1) = 1\\)
+
+We start by showing that \\(\phi(0) = \phi(0 + 0) = \phi(0) + \phi(0)\\). Since \\(\phi(0) = \phi(0) + \phi(0)\\), this means \\(\phi(0) = 0\\).
+
+Similarly, \\(\phi(1) = \phi(1 \cdot 1) = \phi(1) \cdot \phi(1)\\). Since \\(\phi(1) = \phi(1) \cdot \phi(1)\\), this means \\(\phi(1) = 1\\).
+
+**(c)** \\(\phi(\mathbb{F})\\) is an ordered subfield of \\(\mathbb{G}\\)
+
+I'm pretty sure the requirements for an embedding, that \\(\phi(a + b) = \phi(a) + \phi(b)\\) and \\(\phi(a \cdot b) = \phi(a) \cdot \phi(b)\\) and \\(a < b\\) iff \\(\phi(a) < \phi(b)\\), directly prove that \\(\phi(\mathbb{F})\\) is an ordered subfield of \\(\mathbb{G}\\).
 
 ### Exercise 2.19
 
