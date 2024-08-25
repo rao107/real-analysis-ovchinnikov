@@ -32,7 +32,7 @@ Let \\(\sup A = a\\) and \\(\sup B = b\\).
 
 First, let's assume \\(a < b\\). This means that for all \\(x \in B\\), \\(x \leq a\\). In other words, \\(a\\) is an upper bound of \\(B\\) as well. Moreover, the supremum of \\(A \cup B\\) must be \\(a\\) since if there was a smaller upper bound than \\(a\\) then it would need to also be the supremum of \\(A\\) as well. Therefore \\(\sup(A \cup B) = \sup A\\) when \\(a < b\\).
 
-The same argument can be made when \\(b < a\\) to show that the supremum of \\(A \cup B\\) in this scenario would be \\(sup B\\). When \\(a = b\\), then both are supremums of each set so \\(\sup(A \cup B) = a = b\\). Taking everything in, we get that \\(\sup(A \cup B) = \max\\{a, b\\}\\).
+The same argument can be made when \\(b < a\\) to show that the supremum of \\(A \cup B\\) in this scenario would be \\(\sup B\\). When \\(a = b\\), then both are supremums of each set so \\(\sup(A \cup B) = a = b\\). Taking everything in, we get that \\(\sup(A \cup B) = \max\\{a, b\\}\\).
 
 ### Exercise 2.8
 
@@ -110,19 +110,19 @@ Since \\(E\\) is a dense subset, this means for any \\(a \in \mathbb{F}\\) and \
 
 ### Exercise 2.18
 
-**(a)** \\(\phi\\) is a one-to-one mapping
+**(a)** \\(\varphi\\) is a one-to-one mapping
 
-To show \\(\phi\\) is a one-to-one mapping, we must show that \\(\phi(x) = \phi(y) \implies x = y\\). The left hand side of the implication shows that \\(\phi(x) - \phi(y) = 0\\) which consequently show \\(\phi(x - y) = 0\\). Since \\(\phi(0) = 0\\) (this is proven in the next section), this means \\(\phi(x - y) = \phi(0)\\) and so \\(x - y = 0\\) meaning \\(x = y\\).
+To show \\(\varphi\\) is a one-to-one mapping, we must show that \\(\varphi(x) = \varphi(y) \implies x = y\\). The left hand side of the implication shows that \\(\varphi(x) - \varphi(y) = 0\\) which consequently show \\(\varphi(x - y) = 0\\). Since \\(\varphi(0) = 0\\) (this is proven in the next section), this means \\(\varphi(x - y) = \varphi(0)\\) and so \\(x - y = 0\\) meaning \\(x = y\\).
 
-**(b)** \\(\phi(0) = 0\\) and \\(\phi(1) = 1\\)
+**(b)** \\(\varphi(0) = 0\\) and \\(\varphi(1) = 1\\)
 
-We start by showing that \\(\phi(0) = \phi(0 + 0) = \phi(0) + \phi(0)\\). Since \\(\phi(0) = \phi(0) + \phi(0)\\), this means \\(\phi(0) = 0\\).
+We start by showing that \\(\varphi(0) = \varphi(0 + 0) = \varphi(0) + \varphi(0)\\). Since \\(\varphi(0) = \varphi(0) + \varphi(0)\\), this means \\(\varphi(0) = 0\\).
 
-Similarly, \\(\phi(1) = \phi(1 \cdot 1) = \phi(1) \cdot \phi(1)\\). Since \\(\phi(1) = \phi(1) \cdot \phi(1)\\), this means \\(\phi(1) = 1\\).
+Similarly, \\(\varphi(1) = \varphi(1 \cdot 1) = \varphi(1) \cdot \varphi(1)\\). Since \\(\varphi(1) = \varphi(1) \cdot \varphi(1)\\), this means \\(\varphi(1) = 1\\).
 
-**(c)** \\(\phi(\mathbb{F})\\) is an ordered subfield of \\(\mathbb{G}\\)
+**(c)** \\(\varphi(\mathbb{F})\\) is an ordered subfield of \\(\mathbb{G}\\)
 
-I'm pretty sure the requirements for an embedding, that \\(\phi(a + b) = \phi(a) + \phi(b)\\) and \\(\phi(a \cdot b) = \phi(a) \cdot \phi(b)\\) and \\(a < b\\) iff \\(\phi(a) < \phi(b)\\), directly prove that \\(\phi(\mathbb{F})\\) is an ordered subfield of \\(\mathbb{G}\\).
+I'm pretty sure the requirements for an embedding, that \\(\varphi(a + b) = \varphi(a) + \varphi(b)\\) and \\(\varphi(a \cdot b) = \varphi(a) \cdot \varphi(b)\\) and \\(a < b\\) iff \\(\varphi(a) < \varphi(b)\\), directly prove that \\(\varphi(\mathbb{F})\\) is an ordered subfield of \\(\mathbb{G}\\).
 
 ### Exercise 2.19
 
@@ -158,11 +158,19 @@ I'm pretty sure the requirements for an embedding, that \\(\phi(a + b) = \phi(a)
 
 ### Exercise 2.27
 
+For the sake of contradiction, suppose there are two unique cut points \\(c, d\\) such that \\(d - c = \varepsilon > 0\\). Since \\(c\\) is a cut point, \\(c \leq b\\) for all \\(b \in B\\). However, since \\(d > c\\) and from the definition of a cut, there exists \\(b \in B\\) such that \\(b - c < \varepsilon\\). In other words, there is \\(b \in B\\) between \\(c\\) and \\(d\\) so \\(c < b < d\\). Therefore, \\(d\\) is not a cut point which contradicts our assumption.
 
+If \\(c - d = \varepsilon > 0\\), a similar argument holds. Since \\(c\\) is a cut point, \\(a \leq c\\) for all \\(a \in A\\). However, since \\(d < c\\) and the definition of a cut, there exists \\(a \in A\\) such that \\(c - a < \varepsilon\\). In other words, there is \\(a \in A\\) between \\(d\\) and \\(c\\) so \\(d < a < c\\). Therefore, \\(d\\) is not a cut point which again contradicts our assumption.
+
+From the trichotomy property, this must mean \\(c = d\\) so there can only be one unique cut point.
 
 ### Exercise 2.28
 
+Since \\(c\\) is a cut point, for all \\(a \in A\\) and \\(b \in B\\), \\(a \leq c\\) and \\(c \leq b\\). This means \\(c\\) is an upper bound for \\(A\\) and a lower bound for \\(B\\).
 
+To show it is the supremum for \\(A\\), suppose there is a smaller upper bound \\(c' < c\\). That means \\(c - c' = \varepsilon > 0\\). From the definition of a cut, there exists \\(a \in A\\) such that \\(c - a < \varepsilon\\). In other words, there is \\(a \in A\\) in between \\(c' < a < c\\) contradicting our assumption that \\(c'\\) is an upper bound. Therefore, \\(c = \sup A\\).
+
+To show it is the infimum for \\(B\\), suppose there is a greater lower bound \\(c' > c\\). That means \\(c' - c = \varepsilon > 0\\). From the definition of a cut, there exists \\(b \in B\\) such that \\(c - b > \varepsilon\\). In other words, there is \\(b \in B\\) in between \\(c < b < c'\\) contradicting our assumption that \\(c'\\) is a lower bound. Therefore, \\(c = \inf B\\).
 
 ### Exercise 2.29
 
