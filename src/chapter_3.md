@@ -30,7 +30,7 @@ In either case, any element in \\((y - \varepsilon, y + \varepsilon)\\) will als
 
 ### Exercise 3.6
 
-
+Consider the sequence of points \\(a_n = 1/n\\) which is in \\(\\{1/n : n \in \mathbb{N}\\}\\). We have already shown that the sequence converges to \\(0\\) previously. Since \\(0 \notin \\{1/n : n \in \mathbb{N}\\}\\), the set is not compact.
 
 ### Exercise 3.7
 
@@ -46,7 +46,9 @@ In either case, any element in \\((y - \varepsilon, y + \varepsilon)\\) will als
 
 ### Exercise 3.10
 
+If \\(\lim (x_n) \to x\\), 
 
+Assume every neighborhood of \\(x\\) contains infinitely many terms of \\((x_n)\\). For the sake of contradiction, also assume that \\(\lim (x_n) \nrightarrow x\\). 
 
 ### Exercise 3.11
 
@@ -54,11 +56,13 @@ In either case, any element in \\((y - \varepsilon, y + \varepsilon)\\) will als
 
 ### Exercise 3.12
 
+The intersection of two compact sets must be compact. For the sake of counterargument, assume it is not true. That is, there exists there is a sequence in the intersection of compact sets where every subsequence converges to a point outside of the intersection. Since this sequence was in both compact sets, that means its limit must also be in both compact sets as well. In other words, every subsequence must converge inside the intersection of compact sets.
 
+Any family of compact sets must also be compact in the same way. Assume the intersection of \\(k\\) compact sets is compact. The same argument can be made to show that the intersection of \\(k + 1\\) compact sets is also compact.
 
 ### Exercise 3.13
 
-
+Since \\(E\\) and its superset are both compact, the intersection of these two sets must also be compact as shown in Exercise 3.12. The intersection of a set and its subset is the subset so \\(E\\) is the compact intersection.
 
 ### Exercise 3.14
 
