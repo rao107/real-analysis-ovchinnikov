@@ -38,7 +38,7 @@ Consider the sequence of points \\(a_n = 1/n\\) which is in \\(\\{1/n : n \in \m
 
 ### Exercise 3.8
 
-
+Since \\(\\{x_n : n \in \mathbb{N}\\}\\) is finite, then there must be an element in the set that \\((x_n)\\) repeats infinitely. If there wasn't, then \\((x_n)\\) would need to be finite, a contradiction to the size of \\(\mathbb{N}\\). Let the subsequence \\((x'_n)\\) be a constant sequence for the element that repeats infinitely. This subsequence is obviously convergent.
 
 ### Exercise 3.9
 
@@ -46,9 +46,9 @@ Consider the sequence of points \\(a_n = 1/n\\) which is in \\(\\{1/n : n \in \m
 
 ### Exercise 3.10
 
-If \\(\lim (x_n) \to x\\), 
+Assume \\(\lim (x_n) \to x\\). For the sake of contradiction, also assume that there exists a neighborhood of \\(x\\) that does not contain infinitely many terms of \\((x_n)\\). That is, there are only finitely many \\(n\\) such that \\(x_n \in (x - \varepsilon, x + \varepsilon)\\). Since convergent sequences are Cauchy, there exists \\(N\\) such that for all \\(m > N\\), \\(|x_m - x| < \varepsilon\\). Since there are an infinite number of such \\(m\\), there cannot be finitely many terms of \\((x_n)\\) in any neighborhood of \\(x\\).
 
-Assume every neighborhood of \\(x\\) contains infinitely many terms of \\((x_n)\\). For the sake of contradiction, also assume that \\(\lim (x_n) \nrightarrow x\\). 
+Assume every neighborhood of \\(x\\) contains infinitely many terms of \\((x_n)\\). For the sake of contradiction, also assume that \\(\lim (x_n) \nrightarrow x\\). However, from our assumption, for any \\(\varepsilon > 0\\) the neighborhood \\((x - \varepsilon, x + \varepsilon)\\) will contain infinitely many terms of \\((x_n)\\). Therefore, for any \\(N\\) there will always exist \\(n > N\\) such that \\(x - \varepsilon < x_n < x + \varepsilon\\). Therefore, \\(\lim (x_n) \to x\\).
 
 ### Exercise 3.11
 
