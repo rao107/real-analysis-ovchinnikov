@@ -112,9 +112,7 @@ Suppose for the sake of counterargument that \\([a, b] \nsubseteq E\\). This wou
 
 ### Exercise 3.23
 
-First, we show that \\(f(x) = x^n, x \in [0, \infty) \subseteq \mathbb{R}\\) is a strictly increasing function. To show that it is strictly increasing, we need to show that \\(x^n < (x + \varepsilon)^n\\) for \\(\varepsilon > 0\\).
-
-Using Theorem 3.24, we can now see that its inverse function, \\(f^{-1}(x) = \sqrt[n]{x}\\) is continuous.
+First, we show that \\(f(x) = x^n, x \in [0, \infty) \subseteq \mathbb{R}\\) is a strictly increasing function. To show that it is strictly increasing, we need to show that \\(x^n < (x + \varepsilon)^n\\) for \\(\varepsilon > 0\\). We know that \\(x^n < x^n + \varepsilon^n < (x + \varepsilon)^n\\) for \\(x \geq 0\\) so \\(f(x)\\) is strictly increasing. Using Theorem 3.24, we can now see that its inverse function, \\(f^{-1}(x) = \sqrt[n]{x}\\) is continuous.
 
 ### Exercise 3.24
 
@@ -130,7 +128,7 @@ Using Theorem 3.24, we can now see that its inverse function, \\(f^{-1}(x) = \sq
 
 ### Exercise 3.27
 
-
+Since \\(f\\) is uniformly continuous, we know that for every \\(\varepsilon > 0\\) there is a \\(\delta > 0\\) such that if \\(|x - y| < \delta\\) then \\(|f(x) - f(y)| < \varepsilon\\) for any \\(x, y \in E\\). Therefore, for any point \\(a \in E\\), then for all \\(\varepsilon > 0\\) there exists \\(\delta > 0\\) such that if \\(|x - a| < \delta\\) then \\(|f(x) - f(a)| < \varepsilon\\) for any \\(x \in E\\). This satisfies the definition of continuous so \\(f\\) is continuous at every point in \\(E\\).
 
 ### Exercise 3.28
 
