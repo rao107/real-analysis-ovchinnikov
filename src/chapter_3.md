@@ -52,7 +52,7 @@ Assume every neighborhood of \\(x\\) contains infinitely many terms of \\((x_n)\
 
 ### Exercise 3.11
 
-
+For any sequence of points in the union of two compact sets, there are two subsequences divided by the original sets. At least one of the subsequences must have an infinite number of terms or the original sequence is finite. Since each set is compact, a subsequence of the subsequence must converge to a point in the set. The union of the two compact sets will also contain this point. Therefore, the union is compact.
 
 ### Exercise 3.12
 
@@ -74,7 +74,17 @@ Since \\(E\\) and its superset are both compact, the intersection of these two s
 
 ### Exercise 3.16
 
+**(a)** \\(f + g\\)
 
+
+
+**(b)** \\(k \cdot f, k \in \mathbb{F}\\)
+
+**(c)** \\(f \cdot g\\)
+
+**(d)** \\(f/g\\), where \\(g(x) \neq 0\\) on \\(E\\)
+
+**(e)** \\(|f|\\)
 
 ### Exercise 3.17
 
@@ -86,7 +96,7 @@ Since \\(E\\) and its superset are both compact, the intersection of these two s
 
 ### Exercise 3.19
 
-
+Suppose for the sake of counterargument that \\([a, b] \nsubseteq E\\). This would mean that there exists \\(x\\) such that \\(a \leq x \leq b\\) and \\(x \notin E\\). However, this would mean that \\(E = [a, x) \cup (x, b]\\). In other words, \\(E\\) is disconnected, a contradiction. Therefore, \\([a, b] \subseteq E\\).
 
 ### Exercise 3.20
 
@@ -102,7 +112,9 @@ Since \\(E\\) and its superset are both compact, the intersection of these two s
 
 ### Exercise 3.23
 
+First, we show that \\(f(x) = x^n, x \in [0, \infty) \subseteq \mathbb{R}\\) is a strictly increasing function. To show that it is strictly increasing, we need to show that \\(x^n < (x + \varepsilon)^n\\) for \\(\varepsilon > 0\\).
 
+Using Theorem 3.24, we can now see that its inverse function, \\(f^{-1}(x) = \sqrt[n]{x}\\) is continuous.
 
 ### Exercise 3.24
 
