@@ -76,11 +76,41 @@ Since \\(E\\) and its superset are both compact, the intersection of these two s
 
 **(a)** \\(f + g\\)
 
+We want to show that for any \\(a \in E\\) and \\(\varepsilon > 0\\), there exists \\(\delta > 0\\) such that \\(|x - a| < \delta \implies |(f + g)(x) - (f + g)(a)| < \varepsilon\\). Since we know \\(f\\) and \\(g\\) are continuous functions, there exists \\(\delta'\\) and \\(\delta''\\) for any \\(a \in E\\) and \\(\varepsilon > 0\\) such that \\(|x - a| < \delta' \implies |f(x) - f(a)| < \varepsilon/2\\) and \\(|x - a| < \delta'' \implies |g(x) - g(a)| < \varepsilon/2\\). If we let \\(\delta = \min\\{\delta', \delta''\\}\\), then we can see that when \\(|x - a| < \delta\\) then 
 
+\\[
+  \begin{align}
+    |(f + g)(x) - (f + g)(a)| &= |f(x) - f(a) + g(x) - g(a)| \\\\
+    &\leq |f(x) - f(a)| + |g(x) - g(a)| \\\\
+    &< \varepsilon/2 + \varepsilon/2 \\\\
+    &= \varepsilon \\\\
+  \end{align}
+\\]
+
+Therefore, \\(f + g\\) is continuous.
 
 **(b)** \\(k \cdot f, k \in \mathbb{F}\\)
 
+Since \\(f\\) is continuous, there exists \\(\delta\\) such that if \\(|x - a| < \delta\\) then \\(|f(x) - f(a)| < \varepsilon/|k|\\) for any \\(a\\).
+
+\\[
+  \begin{align}
+    |(k \cdot f)(x) - (k \cdot f)(a)| &= |k \cdot (f(x) - f(a))| \\\\
+    &= |k| \cdot |f(x) - f(a)| \\\\
+    &< |k| \cdot \varepsilon/|k| \\\\
+    &= \varepsilon \\\\
+  \end{align}
+\\]
+
+Therefore, \\(k \cdot f\\) is continuous.
+
 **(c)** \\(f \cdot g\\)
+
+\\[
+  \begin{align}
+    |(f \cdot g)(x) - (f \cdot g)(a)| &= |f(x) \cdot g(x) - f(a) \cdot f(a)| \\\\
+  \end{align}
+\\]
 
 **(d)** \\(f/g\\), where \\(g(x) \neq 0\\) on \\(E\\)
 
@@ -88,7 +118,7 @@ Since \\(E\\) and its superset are both compact, the intersection of these two s
 
 ### Exercise 3.17
 
-
+Since \\(f\\) is continuous, we know that for any \\(a \in E\\), there exists \\(\delta > 0\\) such that if \\(|x - a| < \delta\\), then \\(|f(x) - f(a)| < \delta'\\). Since \\(g\\) is also continuous, then for all \\(f(a) \in E'\\), there exists \\(\delta' > 0\\) such that if \\(|f(x) - f(a)| < \delta'\\), then \\(|g(f(x)) - g(f(a))| < \varepsilon\\). Therefore, \\(g \circ f\\) is continuous.
 
 ### Exercise 3.18
 
