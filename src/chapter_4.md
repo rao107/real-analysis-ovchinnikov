@@ -42,7 +42,13 @@ We can show that \\((x^n)' = nx^{n-1}\\) for \\(n > 0\\) using induction. When \
 
 ### Exercise 4.8
 
-
+\\[ 
+  \begin{align}
+    \frac{d}{dx} \sqrt{x + \sqrt{x + \sqrt{x}}} &= \frac{1}{2}\left(x + \sqrt{x + \sqrt{x}}\right)^{-1/2}\left(\frac{d}{dx}\left(x + \sqrt{x + \sqrt{x}}\right)\right) \\\\
+    &= \frac{1}{2}\left(x + \sqrt{x + \sqrt{x}}\right)^{-1/2}\left(1 + \frac{1}{2}(x + \sqrt{x})^{-1/2}\right)\left(\frac{d}{dx}\left(x + \sqrt{x}\right)\right) \\\\
+    &= \frac{1}{2}\left(x + \sqrt{x + \sqrt{x}}\right)^{-1/2}\left(1 + \frac{1}{2}(x + \sqrt{x})^{-1/2}\right)\left(1 + \frac{1}{2}x^{-1/2}\right) \\\\
+  \end{align}
+\\]
 
 ### Exercise 4.9
 
