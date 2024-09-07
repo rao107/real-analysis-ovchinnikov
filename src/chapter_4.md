@@ -26,7 +26,27 @@ If an ordered field contains a convergent sequence which is not eventually const
 
 ### Exercise 4.6
 
+**(a)**
 
+\\[
+  \begin{align}
+    (f + g)'(c) &= \lim_{x \to c} \frac{(f + g)(x) - (f + g)(c)}{x - c} \\\\
+    &= \lim_{x \to c} \frac{f(x) + g(x) - f(c) - g(c)}{x - c} \\\\
+    &= \lim_{x \to c} \frac{f(x) - f(c)}{x - c} + \lim_{x \to c} \frac{g(x) - g(c)}{x - c} \\\\
+    &= f'(c) + g'(c) \\\\
+  \end{align}
+\\]
+
+**(b)**
+
+\\[
+  \begin{align}
+    (kf)'(c) &= \lim_{x \to c} \frac{(kf)(x) - (kf)(c)}{x - c} \\\\
+    &= \lim_{x \to c} \frac{k \cdot f(x) - k \cdot f(c)}{x - c} \\\\
+    &= k \cdot \lim_{x \to c} \frac{f(x) - f(c)}{x - c} \\\\
+    &= k f'(c) \\\\
+  \end{align}
+\\]
 
 ### Exercise 4.7
 
@@ -39,6 +59,8 @@ We can show that \\((x^n)' = nx^{n-1}\\) for \\(n > 0\\) using induction. When \
 
 
 **(c)**
+
+
 
 ### Exercise 4.8
 
@@ -80,7 +102,17 @@ Suppose for the sake of contradiction that there exist \\(\lambda, \lambda' \in 
 
 ### Exercise 4.15
 
-
+\\[
+  \begin{align}
+    f(x) &\leq \frac{x_2 - x}{x_2 - x_1} f(x_1) + \frac{x - x_1}{x_2 - x_1} f(x_2) \\\\
+    (x_2 - x_1) f(x) &\leq (x_2 - x) f(x_1) + (x - x_1) f(x_2) \\\\
+    (x_2 - x + x - x_1) f(x) &\leq (x_2 - x) f(x_1) + (x - x_1) f(x_2) \\\\
+    (x_2 - x) f(x) + (x - x_1) f(x) &\leq (x_2 - x) f(x_1) + (x - x_1) f(x_2) \\\\
+    (x_2 - x) f(x) - (x_2 - x) f(x_1) &\leq (x - x_1) f(x_2) - (x - x_1) f(x) \\\\
+    (x_2 - x) (f(x) - f(x_1)) &\leq (x - x_1) (f(x_2) - f(x)) \\\\
+    \frac{f(x) - f(x_1)}{x - x_1} &\leq \frac{f(x_2) - f(x)}{x_2 - x} \\\\
+  \end{align}
+\\]
 
 ### Exercise 4.16
 
