@@ -56,7 +56,7 @@ If \\(x \in \mathcal{L}(\mathbb{F})\\), then by definition \\(|x| > n\\) for any
 
 ### Exercise 5.10
 
-
+Since \\(g(x) \leq f(x)\\), then \\(0 \leq f(x) - g(x) = (f - g)(x)\\). Since \\(f - g\\) is a non-negative function, that means \\(\int_a^b (f - g) \geq 0\\). From the linearity property of the Riemann integral, \\(\int_a^b f - \int_a^b g \geq 0\\), and so \\(\int_a^b g \leq \int_a^b f\\).
 
 ### Exercise 5.11
 
