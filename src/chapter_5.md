@@ -84,7 +84,13 @@ Since \\(g(x) \leq f(x)\\), then \\(0 \leq f(x) - g(x) = (f - g)(x)\\). Since \\
 
 ### Exercise 5.17
 
+**(a)**
 
+For any \\(x, y \in \mathbb{F}\\) where \\(x < y\\), \\(x^+ \leq y^+\\) and \\(x - x^+ \leq y - y^+\\). If both are less than or equal to 0, then \\(x^+ = 0 \leq 0 = y^+\\) and \\(x - x^+ = x - 0 = x \leq y = y - 0 = y - y^+\\). If both are greater than 0, then \\(x^+ = x \leq y = y^+\\) and \\(x - x^+ = x - x = 0 \leq 0 = y - y = y - y^+\\). If x is less than or equal to 0 and y is greater than 0, then \\(x^+ = 0 \leq y = y^+\\) and \\(x - x^+ = x - 0 = x \leq 0 = y - y = y - y^+\\). Therefore, in every case \\(x^+\\) and \\(x - x^+\\) are increasing.
+
+**(b)**
+
+If \\(x \leq 0\\), then \\(x^+ = 0\\) and \\(x^- = x\\) and if \\(x > 0\\), then  \\(x^+ = x\\) and \\(x^- = 0\\). Therefore, we can see that \\(|x| = x^+ - x^-\\) is true since when \\(x \leq 0\\), the equation turns into \\(|x| = 0 - x = -x\\) and when \\(x > 0\\), the equation turns into \\(|x| = x - 0 = x\\). Therefore, the equation is true for all \\(x\\).
 
 ### Exercise 5.18
 
