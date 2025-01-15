@@ -1,5 +1,7 @@
 # Chapter 4: Differentiation
 
+11/19 problems solved
+
 ### Exercise 4.1
 
 Since \\(\lim_{x \to c} f(x) = L\\), we know that for all \\(\varepsilon > 0\\), there exists \\(\delta > 0\\) such that for all \\(x \in U_\delta(c)\\), \\(L - \varepsilon < f(x) < L + \varepsilon\\).
@@ -16,13 +18,11 @@ If \\(\lim_{x \to c} f(x) = L\\), then for any \\(\varepsilon > 0\\) there exist
 
 ### Exercise 4.4
 
-For any limit point, we know that 
+
 
 ### Exercise 4.5
 
-If an ordered field is countably cofinal,
 
-If an ordered field contains a convergent sequence which is not eventually constant,
 
 ### Exercise 4.6
 
@@ -88,7 +88,7 @@ If \\(f'(x) = g'(x)\\), then \\(f'(x) - g'(x) = 0\\). Since the derivative of \\
 
 ### Exercise 4.12
 
-Since the real numbers is a complete ordered field, we can prove that the derivative of \\((1 + x)^{r} - rx - 1\\) is greater than or equal to 0 for all \\(x \geq -1\\).
+
 
 ### Exercise 4.13
 
@@ -122,9 +122,7 @@ The argument to show that \\(x \leq \max\\{x_1, \dotsc, x_n\\}\\) follows a simi
 
 ### Exercise 4.17
 
-Assume \\(f\\) is convex.
 
-Assume...
 
 ### Exercise 4.18
 

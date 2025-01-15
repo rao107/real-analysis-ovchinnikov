@@ -1,8 +1,6 @@
 # Chapter 6: Infinite Series
 
-Chapter Speedrun Time:
-
-Cumulative Speedrun Time:
+0/14 problems solved
 
 ### Exercise 6.1
 

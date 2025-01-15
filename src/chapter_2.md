@@ -1,5 +1,7 @@
 # Chapter 2: Real Numbers
 
+17/31 problems solved
+
 ### Exercise 2.1
 
 Suppose there are two supremums for a nonempty subset of an ordered field called \\(a\\) and \\(b\\). This means they are both upper bounds and they are both less than or equal to all other upper bounds of this subset. As a result, \\(a \leq b\\) and \\(b \leq a\\) implying that \\(a = b\\).

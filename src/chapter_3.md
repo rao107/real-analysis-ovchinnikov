@@ -1,5 +1,7 @@
 # Chapter 3: Continuous Functions
 
+14/28 problems solved
+
 ### Exercise 3.1
 
 If for every \\(x \in G\\), there is an \\(\varepsilon\\)-neighborhood of \\(x\\) such that \\((x - \varepsilon, x + \varepsilon) \subseteq G\\), then \\(G\\) satisfies the definition of an open subset.
@@ -18,7 +20,7 @@ We can assume \\(I\\) is an open interval \\((a, b)\\) and our result holds for 
 
 ### Exercise 3.4
 
-what if closed set \\(F\\) is only rational numbers but sequence converges to irrational number?
+
 
 ### Exercise 3.5
 

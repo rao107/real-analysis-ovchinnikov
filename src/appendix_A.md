@@ -1,5 +1,7 @@
 # Appendix A: Natural Numbers and Integers
 
+9/14 problems solved
+
 ### Exercise A.1
 
 We can see that \\(s\\) is one-to-one from **P2** of the Peano Axioms.
@@ -48,11 +50,7 @@ To prove the above equality, we want to show that
 
 Since \\((m', n') \sim (m, n)\\) and \\((p', q') \sim (p, q)\\), this means \\(m' + n = n' + m\\) and \\(p' + q = q' + p\\).
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise A.7
 
@@ -109,21 +107,11 @@ Proving **R2**:
 
 \\(A \bigtriangleup (B \bigtriangleup C) = A \bigtriangleup ((B \setminus C) \cup (C \setminus B)) = (A \setminus ((B \setminus C) \cup (C \setminus B))) \cup (((B \setminus C) \cup (C \setminus B)) \setminus A) \\)
 
-???
 
-TODO
-
-TODO
-
-TODO
 
 **(e)** \\(R = \langle F, +, \cdot \rangle\\)
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise A.10
 
@@ -135,24 +123,12 @@ For the sake of contradiction, let's assume there are two identity elements of a
 
 ### Exercise A.12
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise A.13
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise A.14
 
-TODO
 
-TODO
-
-TODO

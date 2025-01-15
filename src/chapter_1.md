@@ -1,5 +1,7 @@
 # Chapter 1: Rational Numbers
 
+18/28 problems solved
+
 ### Exercise 1.1
 
 From Theorem 1.1, \\((mp, np) \sim (m, n)\\) is true if and only if \\(mpn = mnp\\) which is easily true.
@@ -199,11 +201,7 @@ Proving **D**:
 
 In an ordered field, \\(0 \neq 1\\). If \\(1 < 0\\), then ... [find contradiction]. Therefore, from the trichotomy property, \\(0 < 1\\).
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise 1.10
 
@@ -213,11 +211,7 @@ Now, we assume that \\(\tau(-n) = -\tau(n)\\) and must prove \\(\tau(-(n + 1)) =
 
 \\(-\tau(n + 1) = -(\tau(n) + 1) = -\tau(n) - 1 = \tau(-n) - \tau(1)\\)
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise 1.11
 
@@ -263,11 +257,7 @@ If \\(x - y\\) is positive, \\(|y - x| = |-(x - y)| = x - y = |x - y|\\). If \\(
 
 We know that \\(|x - z| = |x - y + y - z|\\).
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise 1.17
 
@@ -358,11 +348,7 @@ We can use the Squeeze Theorem to show this limit is true. We know that \\(1/n^3
 **(c)**
 \\(\lim\frac{2 + n - n^2}{4 + 5n + 3n^2} = -\frac{1}{3}\\)
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise 1.22
 

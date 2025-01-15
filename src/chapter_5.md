@@ -1,14 +1,12 @@
 # Chapter 5: Integration
 
+5/18 problems solved
+
 ### Exercise 5.1
 
 We can prove that a finite subset of an ordered field containing more than one element can be enumerated by using induction on the size of the subset \\(n\\). For the base case of \\(n = 2\\), it is obvious that the two elements can be sorted whether the first is smaller than the second or vice versa. For the inductive case, we can assume that we can order a finite subset of size \\(n\\) and must show that a finite subset of size \\(n + 1\\) can be ordered in the same way.
 
-TODO
 
-TODO
-
-TODO
 
 ### Exercise 5.2
 
@@ -36,7 +34,15 @@ If \\(x \in \mathcal{L}(\mathbb{F})\\), then by definition \\(|x| > n\\) for any
 
 ### Exercise 5.5
 
+To show that \\(\mathcal{I}(\mathbb{F})\\) is closed under addition, suppose there exists \\(x + y \notin \mathcal{I}(\mathbb{F})\\) where \\(x, y \in \mathcal{I}(\mathbb{F})\\). In other words, there exists \\(p \in \mathbb{N}\\) where \\(\|x + y\| \geq 1/p\\). Since \\(x, y \in \mathcal{I}(\mathbb{F})\\), \\(\|x\|, \|y\| < 1/3p\\). The following set of equalities and inequalities show that \\(x + y\\) must be in \\(\mathcal{I}(\mathbb{F})\\).
 
+\\[ |x + y| \leq |x| + |y| < \frac{1}{3p} + \frac{1}{3p} = \frac{2}{3p} < \frac{1}{p} \\]
+
+To show that \\(\mathcal{L}(\mathbb{F}) \cap \mathbb{F}^+\\) is closed under addition, suppose there exists \\(x + y \notin \mathcal{L}(\mathbb{F}) \cap \mathbb{F}^+\\) where \\(x, y \in \mathcal{L}(\mathbb{F}) \cap \mathbb{F}^+\\). In other words, there exists \\(p \in \mathbb{N}\\) where \\(\|x + y\| \leq p\\). Since \\(x, y \in \mathcal{L}(\mathbb{F}) \cap \mathbb{F}^+\\), \\(\|x\| > 3p\\) and \\(\|y\| > p\\). The following set of equalities and inequalities show that \\(x + y\\) must be in \\(\mathcal{L}(\mathbb{F}) \cap \mathbb{F}^+\\).
+
+\\[ \|x + y\| \geq \|\|x\| - \|-y\|\| > \|3p - p\| = 2p > p \\]
+
+To show \\(x - y \in \mathcal{L}(\mathbb{F})\\), ...
 
 ### Exercise 5.6
 
