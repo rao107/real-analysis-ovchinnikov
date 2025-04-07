@@ -1,5 +1,7 @@
 # Chapter 6: Infinite Series
 
+This was where I realized I didn't actually need to practice real analysis as a prerequisite for the topics I really wanted to invest time into learning. Therefore, this chapter does not have any solved problems. If this is unsatisfying, I recommend picking up the book and solving these exercises yourself so that you can fill in these blanks.
+
 0/14 problems solved
 
 ### Exercise 6.1
