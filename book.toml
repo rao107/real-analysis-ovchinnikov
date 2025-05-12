@@ -3,7 +3,7 @@ authors = ["Anirudh Rao"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Real Analysis: Foundations, Solutions"
+title = "Notes for Real Analysis: Foundations by Ovchinnikov"
 
 [output.html]
 mathjax-support = true
